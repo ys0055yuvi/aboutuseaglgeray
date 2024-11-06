@@ -1,151 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .header {
-            background: #f4f4f4;
-            padding: 30px 0;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #333;
-        }
-        .section {
-            padding: 20px 0;
-        }
-        .section h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .image-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .image-row img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .image-row .image-item {
-            flex: 1 1 300px;
-            max-width: 300px;
-            margin: 10px;
-            text-align: center;
-        }
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .team-member {
-            flex: 1 1 300px;
-            max-width: 300px;
-            margin: 20px;
-            text-align: center;
-        }
-        .team-member img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 10px;
-        }
-        .team-member h3 {
-            margin: 10px 0;
-            font-size: 22px;
-        }
-        .team-member p {
-            font-size: 16px;
-            color: #777;
-        }
-        @media (max-width: 768px) {
-            .team-member, .image-item {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <h1>About Us</h1>
-    </header>
-    <div class="container">
-        <section class="section">
-            <h2>Our Story</h2>
-            <p>Welcome to [Your Company Name], where passion meets precision. Founded in [Year], our mission has always been to bring unique and high-quality products to our customers. Our journey began with a simple idea and has blossomed into a brand recognized for its commitment to excellence.</p>
-            <p>At [Your Company Name], we believe in the power of craftsmanship and the importance of detail. Each product is meticulously designed and created with care, reflecting our dedication to both aesthetic beauty and functionality.</p>
-        </section>
-        <section class="image-row">
-            <div class="image-item">
-                <img src="https://via.placeholder.com/300" alt="Image 1">
-                <p>Caption for image 1</p>
-            </div>
-            <div class="image-item">
-                <img src="https://via.placeholder.com/300" alt="Image 2">
-                <p>Caption for image 2</p>
-            </div>
-            <div class="image-item">
-                <img src="https://via.placeholder.com/300" alt="Image 3">
-                <p>Caption for image 3</p>
-            </div>
-        </section>
-        <section class="section">
-            <h2>Our Team</h2>
-            <div class="team">
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
-                    <h3>John Doe</h3>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
-                    <h3>Jane Smith</h3>
-                    <p>Chief Operating Officer</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/150" alt="Team Member 3">
-                    <h3>Bob Johnson</h3>
-                    <p>Head of Marketing</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <h2>Our Values</h2>
-            <p>We are driven by a set of core values that define our work and our relationships with our customers:</p>
-            <ul>
-                <li><strong>Quality:</strong> We never compromise on quality, ensuring that every product we create meets the highest standards.</li>
-                <li><strong>Integrity:</strong> We believe in honest and transparent business practices.</li>
-                <li><strong>Innovation:</strong> We constantly seek new ways to improve and innovate.</li>
-                <li><strong>Customer Focus:</strong> Our customers are at the heart of everything we do.</li>
-            </ul>
-            <p>Thank you for being part of our story. We look forward to continuing this journey with you.</p>
-        </section>
-    </div>
-</body>
-</html>
+.hero-section {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.about-section {
+    display: flex;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text, .about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.values-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-box {
+    width: 30%;
+    padding: 20px;
+}
+
+.team-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
